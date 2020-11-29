@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="CSS/bar.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+
+<body>
+<style>
+body {
+    margin: 0;
+    background-image: url("Images/lf.jpg");
+
+    background-size: 100%;
+    
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+}
+
+input[type=text] {
+
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 22px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 90%;
+  height:80px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  margin: 8px 22px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+ 
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+ </style>
+<script>
+    function validateForm()
+     {
+        var x = document.forms["Myform"]["firstname"].value;
+        var y = document.forms["Myform"]["lastname"].value;
+        var z= document.forms["Myform"]["Email"].value;
+        
+                
+        if(x == "" || y =="" || z=="" )
+        {
+            alert("Please do not leave any text feild empty");
+            return false;             
+        }
+        else
+        {
+            
+            alert("Your form has been submitted.");
+        }
+    }
+</script>
+>
+
+
+<br><br>
+<div class="a">
+    <div class="topnav">
+        <a href="homepage.html">Home</a>
+        <a href="CV.html">CV</a>
+        <a href="Blog.html">Blog</a>
+        <a href="research.html">Research</a> 
+        <a class="active" href="about.html">About Us</a>
+    </div>
+</div>      
+    
+    <br><br>
+<div style="position: absolute; background-color: rgb(140, 140, 140,0.5); right: 154px; width: 500px; height: 450px ;color: #f2f2f2; text-align: center; ">
+   
+             <form name="Myform" onsubmit="return validateForm()">
+             <br>   
+             First Name:<br>
+             <input type="text" name="firstname" >
+             <br>
+             Last Name:<br>
+             <input type="text" name="lastname" >
+             <br> 
+             Email : <br>
+             <input type="text" name="Email" >
+             <br>
+             Message : <br>
+             <textarea>Some text...</textarea>
+             <br>   
+             <input type="submit" value="Submit">
+             </form>
+       
+</div>   
+
+ <div  style="position: absolute; background-color: #3c3f42; left: 150px; width: 459px; height: 450px ;color: #f2f2f2; text-align: center; ">
+        <h3> Address </h3>
+        <h4> Shorekhutte, Kathmandu</h4>
+        <br>
+        <h3> Contact Me</h3>
+              <h4> +977 - 9861967556</h4>
+        <br>
+        <h3>Email</h3>
+        <h4 > sai.shrestha123@gmail.com</h4>
+       <div style="position: absolute; top: 360px; left: 90px" >
+        <a href="https://www.facebook.com/sai.shrestha.92" target="_blank" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="https://www.instagram.com/sai.shrestha/"  target="_blank" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-snapchat-ghost"></a>
+    </div>
+</div>
+
+
+
+    
+    
+<div class="footer" style="position: absolute; top: 630px; background-color: rgba(0, 0, 0, 0.5); height: 130px; width: 100%; color: white; text-align: center;">
+    <br><br>
+        <p>&nbsp;Shrestha, Sai</p> 
+           
+
+</div>
+    
+    
+</body>  
+</html>
